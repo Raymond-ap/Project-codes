@@ -1,0 +1,125 @@
+/* ======= TABLET ======= */
+@media screen and (max-width: 900px) {
+  .fixed-burger {
+    display: block !important;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .fixed-nav {
+    /* display: block !important; */
+    height: initial !important;
+  }
+
+  .fixed-nav .links {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .fixed-nav .links {
+    display: flex !important;
+    flex-direction: column !important;
+    background: #203854 !important;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .show-links {
+    overflow: visible !important;
+    height: initial !important;
+  }
+
+  .fixed-nav .links > li {
+    padding: 1rem 0;
+  }
+
+  .fixed-nav .links > li:hover {
+    padding-left: 1rem;
+    transition: all 0.5s linear;
+  }
+
+  .fixed-bth > button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: initial !important;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .menu-links-wrapper {
+    display: initial !important;
+  }
+
+  .logo .burgerIcon {
+    display: flex !important;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .menu-links .links {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .menu-links .links {
+    display: none;
+    flex-direction: column;
+    background: #293f5880;
+  }
+
+  .show-top-link {
+    display: flex !important;
+    transition: all 0.5s linear;
+  }
+
+  .menu-links .links > .single-links:hover {
+    /* padding-left: 1rem !important;
+        transition: all .5s linear; */
+  }
+
+  .menu-btns {
+    display: none !important;
+  }
+
+  .single-links:nth-child(4) > a {
+    padding-left: initial !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner {
+    min-height: 90vh !important;
+  }
+
+  .footer-wrapper {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner-content h2 {
+    font-size: 25px !important;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons > a {
+    padding: 0.5rem 0;
+  }
+}

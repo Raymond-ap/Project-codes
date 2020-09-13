@@ -1,0 +1,373 @@
+/* ============ GLOBAL STYLES ============= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #ebebeb;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.main {
+  min-height: 100vh;
+  background: #203854;
+}
+
+/* ============== LOGIN PAGE =================== */
+
+/* ============ FORM CONTAINER ============= */
+.container-wrapper {
+  min-height: 85vh;
+  margin-top: 100px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* font-family: 'Poppins', sans-serif !important; */
+.intro {
+  color: #203854;
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  width: 400px;
+}
+
+.form {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid rgba(161, 160, 160, 0.562);
+}
+
+.form > div {
+  display: grid;
+}
+
+.form > div label {
+  text-transform: capitalize;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.margins {
+  margin-bottom: 10px;
+}
+
+.forgot {
+  padding-top: 4px;
+  text-transform: capitalize;
+  font-size: 14px;
+  text-align: right;
+}
+
+.form > div input {
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  border: 1px solid rgb(161, 160, 160);
+  background: rgb(232, 240, 254);
+}
+
+.submit-btn {
+  margin: 1rem 0;
+}
+
+.submit-btn > button {
+  text-transform: capitalize;
+  padding: 0.6rem;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #152538;
+  border: none;
+  color: #fff;
+  opacity: 0.9;
+  border-radius: 0.3em;
+}
+
+.submit-btn > button:hover {
+  opacity: 1;
+}
+
+.bottom-container {
+  border: 1px solid rgba(161, 160, 160, 0.562);
+  padding: 1.5rem;
+  background: #fff;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-container p {
+  text-transform: capitalize;
+  color: #152538;
+}
+
+.bottom-container .create-account * {
+  color: #ce375c;
+}
+
+/* ============== END OF LOGIN PAGE =================== */
+/* ======================================================= */
+
+/* =============== SIGN UP PAGE ========================= */
+
+.header {
+  height: 65px;
+  background: #152538;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #fff;
+
+  -webkit-box-shadow: -1px 9px 5px -6px rgba(166, 159, 166, 1);
+  -moz-box-shadow: -1px 9px 5px -6px rgba(166, 159, 166, 1);
+  box-shadow: -1px 9px 5px -6px rgba(166, 159, 166, 1);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo > div {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-logo > div i {
+  padding-left: 0.5rem;
+}
+
+.header-logo > div:hover {
+  color: rgb(219, 214, 214);
+}
+
+.sign-in-wrapper a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  border: 1px solid rgb(219, 214, 214);
+  padding: 0.3rem;
+  border-radius: 0.3em;
+}
+
+.sign-in-wrapper a:hover {
+  border: 1px solid #fff;
+}
+
+.all-wrapper {
+  padding-top: 50px
+}
+
+.signup-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.signup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-content h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+.signup-content p {
+  font-size: 19px;
+  color: rgb(212, 211, 211);
+  line-height: 1.8em;
+}
+
+.sigup-form-wrapper {
+  background: #fff;
+  padding: 1rem;
+  border-radius: .4em;
+}
+
+.signup-form > div {
+  display: grid;
+  margin: 1rem 0;
+}
+
+
+.signup-form label {
+  text-transform: capitalize;
+  color: #203854;
+  padding-bottom: 5px;
+}
+
+.signup-form > div input,.signup-form > div select ,.signup-page-btn > button {
+  padding: .7rem;
+  background: #a5c4e746;
+  border: none;
+  border-radius: .5em;
+  outline: none;
+}
+
+.signup-page-btn > button{
+  margin: 1rem 0;
+  background: #203854;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 19px;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.signup-page-btn > button:hover {
+  opacity: 1;
+}
+
+.terms {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1130px) {
+  .signup-container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .signup-container {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-content {
+    text-align: center;
+  }
+}
+
+/* ============== END OF SIGN UP PAGE ================== */
+/* ===================================================== */
+
+/* ========= FOOTER =========== */
+footer {
+  min-height: 7vh;
+  background: #152538;
+  color: #fff;
+  display: flex;
+}
+
+.footer {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icons {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons h3 {
+  font-weight: 100;
+}
+
+.footer-icons * {
+  margin: 0 0.5rem;
+}
+
+.footer-icons > div a i {
+  font-size: 21px;
+}
+
+.gmail > a i {
+  color: rgba(161, 16, 16, 0.678);
+}
+
+.twitter > a i {
+  color: rgb(35, 124, 184);
+}
+
+.facebook > a i {
+  color: blue;
+}
+
+.linkedin > a i {
+  color: rgb(74, 77, 221);
+}
+
+.pinterest > a i {
+  color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-icons {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-icons {
+    flex-direction: column;
+  }
+
+  .pinterest,
+  .linkedin,
+  .facebook,
+  .twitter,
+  .gmail {
+    margin: 1rem 0 !important;
+  }
+
+  .container-wrapper {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-wrapper {
+    margin-top: 40px;
+  }
+
+  .intro {
+    margin-top: 50px;
+  }
+
+  .wrapper {
+    width: initial;
+  }
+}

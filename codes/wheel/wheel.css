@@ -1,0 +1,178 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body {
+  font-family: arial;
+}
+
+/* wrapper */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper-table {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.select-wrapper * {
+  text-transform: capitalize;
+}
+
+.select-wrapper {
+  display: grid;
+}
+
+.select-wrapper label {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.select-wrapper select {
+  padding: 0.3rem 1rem;
+  font-size: 19px;
+}
+
+.select-wrapper select option:nth-child(odd) {
+  background: #dddddd;
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel {
+  background-image: url(./wheel_back.png);
+  background-position: center;
+  background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1,
+p {
+  margin: 0;
+}
+
+div.power_controls {
+  margin-right: 70px;
+}
+
+div.html5_logo {
+  margin-left: 70px;
+}
+
+/* Styles for the power selection controls */
+table.power {
+  background-color: #cccccc;
+  cursor: pointer;
+  border: 1px solid #333333;
+}
+
+table.power th {
+  background-color: white;
+  cursor: default;
+}
+
+td.pw1 {
+  background-color: #6fe8f0;
+}
+
+td.pw2 {
+  background-color: #86ef6f;
+}
+
+td.pw3 {
+  background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable {
+  cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom {
+  margin-bottom: 5px;
+}
+
+/* ======== SCOREBOARD TABLES ============= */
+
+.scoreboard-wrapper table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.scoreboard-wrapper td,
+.scoreboard-wrapper th {
+  text-transform: capitalize;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.scoreboard-wrapper tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.botton-navs {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.select-btn {
+  margin-top: .5rem;
+  background: rgba(29, 33, 54, 0.849);
+  color: #fff;
+}
+
+.spin-btns, .select-btn {
+  width: 100%;
+  font-weight: 800;
+  font-size: 19px;
+  text-transform: capitalize;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4em;
+  outline: none;
+}
+
+.spin-btns:nth-child(1) {
+  background: rgba(39, 44, 70, 0.849);
+  color: #fff;
+}
+
+.spin-btns:nth-child(2) {
+  background: rgba(180, 38, 38, 0.849);
+  color: #fff;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .scoreboard-wrapper {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .scoreboard-wrapper {
+    width: 100%;
+  }
+}
